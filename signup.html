@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-    <title>E-Achilles</title>
+    <title>E-Achilles Sign Up</title>
    
      <link href="css/style.css" rel="stylesheet" type="text/css" />
   </head>
@@ -20,7 +20,7 @@
         <nav id="nav">
             <ul id="menu">            
                 <li>
-                    <a class="active" href="index.html">Home</a>
+                    <a href="index.html">Home</a>
                 </li>
                 <li>
                     <a href="city.html">City Bikes</a>
@@ -35,28 +35,47 @@
                     <a href="gallery.html">Gallery</a>                    
                 </li>   
                 <li>
-                    <a href="signup.html">Sign Up</a>
+                    <a class="active" href="signup.html">Sign Up</a>
                 </li>               
             </ul>
         </nav>
         
     </header>
     
-    <section id="main-img-cont">
-        <div id="main-image"></div>
-        <div id="cover-img-text">
-            <h2>E-Bike Basics</h2>            
-        </div>
-
-    </section>
     
-    <section id="page-subject">
-        <h2 id="content">E-bikes for Everyone</h2>
-
-        <p> ince upn ahdguasugh </p>
-
-    </section>
     
+    
+    
+    <section class="form-section">
+       
+        <form method="post" class="signup-form" action="https://formdump.codeinstitute.net/">
+               
+               <h2>What style of bike would you ride?<i class="fa-solid fa-bicycle"></i></h2>
+               
+            <label for="fname">First Name</label>
+            <input class="text-input" id="fname" type="text" name="first_name" required>
+            
+            <label for="lname">Last Name</label>
+            <input class="text-input" id="lname" type="text" name="last_name" required>
+            
+            <label for="email">Email Address</label>
+            <input class="text-input" id="email" type="email" name="email_address" required>
+            
+        
+            <label for="road">City Bike</label>
+            <input id="road" type="radio" class="radio" name="bike_preference" value="road" required>
+            
+            <label for="trail">Fat Bike</label>
+            <input id="trail" type="radio" class="radio" name="bike_preference" value="trail">
+            
+            <label for="both">Dirt Bike</label>
+            <input id="both" type="radio" class="radio" name="bike_preference" value="both">
+            
+            <input class="join-button" type="submit" value="Let's Ride">
+        
+
+        </form>
+        </section>
     <footer>
         <ul class="social-networks">
                 <li><a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook"></i></a></li>
@@ -65,7 +84,7 @@
                 <li><a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a></li>
             </ul>
     </footer>
-        <script src="https://kit.fontawesome.com/47282a3006.js" crossorigin="anonymous"></script>
-        <script src="index.js"></script>
-    </body>
+    <script src="https://kit.fontawesome.com/47282a3006.js" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+</body>
 </html>

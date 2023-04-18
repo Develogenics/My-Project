@@ -8,21 +8,41 @@
 
 body{
     font-family: Lato, sans-serif;
-    color: #3a3a3a;
+    color: #00FFFF;
+    background-color: #002349;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 
 
+
+
+
 #header {
-    height: 55px;
+    height: 98px;
     width: 100%;
-    background-color: aqua;
+    background-color: #002349;
+}
+
+#header img {
+    width: 10%;
+    height: auto;  
+    transform: rotate(-30deg);
+}
+
+
+#logo {
+    left: 2%;
+    top: 2%;
+    position: absolute;
 }
 h1{
     font-family: Oswald, sans-serif;
     text-transform: uppercase;
     letter-spacing: 4px;
-    color: #252525;
+    color: #00FFFF;
     padding-top: 0.5%;
 }
 
@@ -30,40 +50,40 @@ h2 {
     font-family: Oswald, sans-serif;
     text-transform: uppercase;
     letter-spacing: 4px;
-    color: #252525;
+    color: #00FFFF;
     padding-top: 0.5%;
 
 }
 
-#logo{
-    float: left;
+
+
+#title {
+    text-align: center;
     font-size: 200%;
     margin-left: 10px;
+    position: absolute;
+    left: 0;
+    padding-left: 40%;
+    padding-top: 1%;
+    
 }
 
 
 
-#nav {
-    height: 20%;
-}
+
 #menu{
     font-size: 110%;
     letter-spacing: 4px;
     font-weight: bold;
+    padding-top: 6%;    
     text-align: center;
-    left: 10%
 }
 
-#logo {
-    line-height: 40px;
-}
+
 
 #menu {
-    line-height: 50px;
-    
-
-
-}
+    line-height: 10px;
+    }
 
 #menu li {
     
@@ -82,175 +102,87 @@ h2 {
 }
 
 #menu a:hover{
-    border-bottom: 1px solid #3a3a3a;
+    border-bottom: 1px solid #FF595A;
 }
 
 .active{
-    border-bottom: 1px solid #3a3a3a;
+    border-bottom: 1px solid #FF595A;
 }
 
 
 
-#hero-outer{
-    height:600px;
+#main-img-cont{
+    height:200px;
     width: 100%;
     overflow: hidden;
-    position: relative;
+    
 }
 
-#hero-image{
-    height:600px;
+#main-image{
+    height:200px;
     width: 100%;
-    background: url("https://assets.newatlas.com/dims4/default/14445ab/2147483647/strip/true/crop/5472x3648+0+0/resize/1200x800!/quality/90/?url=http%3A%2F%2Fnewatlas-brightspot.s3.amazonaws.com%2F69%2F57%2F60aac6a14847829772cd8cccb3eb%2Fstarkf-actionr2-joshhill-1143.jpg") no-repeat center center;
+    background: url("/images/rear-wheel.jpg") no-repeat center center;
 
     
-    animation-name: hero-zoom;
+    animation-name: main-zoom;
     animation-duration: 6s;
     animation-fill-mode: forwards;
 }  
 
 
-@keyframes hero-zoom {
+@keyframes main-zoom {
     from{
-        transform: scale(1.2);
+        transform: scale(1.4);
     }
     to{
-        transform: scale(1.07);
+        transform: scale(1.8);
     }
 }
 
-#cover-text, #cover-text h2 {
-    color: #ffffff;
+#cover-img-text, #cover-img-text, #cover-img-text h2{
+    color: #00FFFF;
     text-align: center;
+    
 }
 
-#cover-text {
+#cover-img-text {
     font-size: 130%;
     font-family: Oswald;
     text-transform: uppercase;
     letter-spacing: 4px;
 
     width: 300px;
-    height: 200px;
+    height: 80px;
 
-    padding-top: 20px;
+    padding-top: 40px;
     padding-left: 10px;
     padding-bottom: 20px;
 
-    background-color: rgba(241, 109, 107, .7);
+    background-color: rgba(0, 35, 73, 0.7);
 
-    bottom: 180px;
+    top: 130px;
     left: 30px;
 
     position: absolute;
+    border-radius: 50%;
 
 }
 
-#club-ethos{
-    height: 600px;
-}
 
-#left-about{
-    padding-top: 30px;
-    width: 33%;
-    float: left;
-}
 
-#right-about {
-    padding-top: 30px;
-    width: 33%;
-    float: right;
-}
-
-#center-about {
-    width: 33%;
-    margin: 0 auto;
-}
-
-hr {
-    border-top: 1px solid #3a3a3a;
-    width: 100%;
-    margin: 5px 0;
-}
-
-.left-about-heading {
-    width: 60%;
-    float: right;
-    line-height: 20px;
-    clear: both;
-    margin-bottom: 50px;
-}
-
-.right-about-heading {
-    width: 60%;
-    float: left;
-    line-height: 20px;
-    clear: both;
-    margin-bottom: 50px;
-}
-
-.right-about-heading p {
-    text-align: right;
-}
-
-.right-about-heading h2 {
-    text-align: right;
-}
-
-#welcome {
+#content {
     margin: 20px 0;
     text-align: center;
     font-size: 280%;
 }
 
-#circle-container {
-    width: 300px;
-    height: 300px;
-    padding: 30px;
-    border-style: solid;
-    border-color: #cccccc;
-    border-width: 1px;
-    border-radius: 50%;
-    margin: 0 auto;
-}
-
-#circle-cover-bg {
-    background: url("https://codeinstitute.s3.amazonaws.com/FundamentalsProjects/HTML-CSS/video-mask.png") no-repeat center center;
-    height: 100%;
-    border-radius: 50%;
-}
-
-/* Event times */
-
-#times{
-    background-image: url("https://codeinstitute.s3.amazonaws.com/FundamentalsProjects/HTML-CSS/dublin-city.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+footer {
     width: 100%;
-    overflow: hidden;
-}
+    height: 55px;
+    background-color: #00FFFF;
+     
+    margin-top: auto;
 
-#times div {
-    color: #fafafa;
-    background-color: rgba(0,0,0, .6);
-    width: 20%;
-    height: 300px;
-    float: left;
-    padding: 30px 0 0 10px;
-    text-align: center;
-    border: 2px solid white;
-    box-sizing: border-box;
-}
-
-#times h2 {
-    color: #fafafa;
-}
-
-
-
-footer{
-    height: 150px;
 }
 
 .social-networks{
@@ -265,8 +197,9 @@ footer{
 .social-networks i{
     font-size: 160%;
     margin: 1%;
-    padding: 5%;
-    color: #3a3a3a;
+    padding-right: 10%;
+    padding-top: 5px;
+    color: #FF595A;
 }
 
 
@@ -286,19 +219,22 @@ footer{
 
 .form-section {
     clear: left;
-    background: url("https://codeinstitute.s3.amazonaws.com/FundamentalsProjects/HTML-CSS/formbg.jpg");
+    background: url("/images/biker.jpg") no-repeat center center;
     background-size: cover;
     background-position: center;
-    height: 900px;
+    height: 600px;
 }
 
+
+
 .signup-form {
-    margin-top: 150px;
+    margin-top: 80px;
+    margin-left: auto;
     color: #fff;
-    background-color: rgba(60, 60, 60, 0.6);
+    background-color: rgba(0, 35, 73, 0.7);
     max-width: 400px;
     position: absolute;
-    left: 10%;
+    left: 30%;
     padding: 30px;
 }
 
@@ -337,42 +273,15 @@ footer{
     color: #f16c6b;
 }
 
+.radio{
+    margin-right:25px;
+  }
+
 @media screen and (max-width: 1200px){
-    #club-ethos{
-        width: 65%;
-        height: 1200px;
-        margin: 0 auto;
+    
     }
 
-    #welcome {
-        padding: 30px 0;
-        margin-top: 0;
-    }
-
-    #left-about, #right-about {
-        width:100%;
-        float:left;
-        padding: 0;
-    }
-
-    #center-about{
-        clear: both;
-        width: 100%;
-        float: left;
-        padding: 0;
-    }
-
-    #times div {
-        width: 100%;
-        clear: both;
-        height: 150px;
-        padding: 0;
-    }
-
-    hr {
-        display: none;
-    }
-}
+    
 
 @media screen and (max-width: 950px){
 
@@ -384,38 +293,18 @@ footer{
         line-height: 25px;
     }
 
-    #cover-text{
+    #cover-img-text{
         left:0px;
     }
 
-    #club-ethos{
+    #page-subject{
         width:90%;
         height: 1200px;
         margin: 0 auto;
-    }
-
-    .left-about-heading, .right-about-heading{
-        width: inherit;
-    }
-
-    .left-about-heading h2, .right-about-heading h2{
-        width: 100%;
-        text-align: center;
-    }
-
-    .left-about-heading p, .right-about-heading p{
-        text-align: center;
-        padding: 0 20px 0 20px;
-    }
-
-    #photo{
-        column-count: 3;
     }
 }
 
 
 @media screen and (max-width: 800px){
-    #photo{
-        column-count: 2;
-    }
+    
 }

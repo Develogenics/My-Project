@@ -103,7 +103,7 @@ h2 {
 #main-image{
     height:200px;
     width: 100%;
-    background: url("images/rear-wheel.jpg") no-repeat center center;    
+    background: url("/images/rear-wheel.jpg") no-repeat center center;    
     animation-name: main-zoom;
     animation-duration: 6s;
     animation-fill-mode: forwards;
@@ -183,7 +183,7 @@ footer {
 
 .form-section {
     clear: left;
-    background: url("images/biker.jpg") no-repeat center center;
+    background: url("/images/biker.jpg") no-repeat center center;
     background-size: cover;
     background-position: center;
     height: 600px;
